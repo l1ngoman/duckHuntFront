@@ -20,7 +20,7 @@ class DuckPage extends Component {
   render() {
     let id = this.props.match.params.id
     let { name, age, enjoys, fullImage, quacks } = this.state.duck
-    console.log(this.state.comments);
+    console.log(fullImage);
     // if(this.state.comments.length > 0){
     //   let { body, author } = this.state.comments[Math.floor(Math.random()*this.state.comments.length-1)]
     // }else{
