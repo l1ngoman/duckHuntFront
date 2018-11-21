@@ -7,9 +7,8 @@ let getDucks = function() {
     return fetch(BASE + '/ducks', {
       method: 'GET',
       headers: {
-        'Content-Type': 'application/json'
+        'Access-Control-Allow-Origin':'*'
       },
-      mode: 'cors',
     }) // this would be equivalent to going to localhost:3000/cats in your browser. Do that - - what do you see?
         .then((resp) => {
             // resp will be whatever you saw on the page localhost:3000/cats, it is the result of our fetch call
