@@ -14,11 +14,15 @@ class Ducks extends Component {
 
   render() {
     console.log(this.state.allDuckies);
-    let duckies = this.state.allDuckies.map((duck) => {
-      console.log("i'm doing stuff");
-       return <DuckTale key={duck.id} id={duck.id} info={duck} />
-    })
-
+    let duckies
+    if(this.state.allDuckies.length < 1){
+      duckies = "Loading..."
+    }else{
+      duckies = this.state.allDuckies.map((duck) => {
+        console.log("i'm doing stuff");
+         return <DuckTale key={duck.id} id={duck.id} info={duck} />
+      })
+    }
     return (
       <main>
         <div className="cardLayout">
