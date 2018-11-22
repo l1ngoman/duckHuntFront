@@ -31,7 +31,7 @@ class DuckPage extends Component {
       <div>
         <div id="profile">
         <button id="leftArrow">Swipe Left</button>
-          <img className="fullImage" src={fullImage}/>
+          <img className="fullImage" src={fullImage}>
           <div id="profileInfo">
             <div id="profileInfo1">
               <div id="profileInfo2">
